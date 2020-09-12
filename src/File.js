@@ -44,7 +44,6 @@ function File({filename,repo,folder}) {
 
   return (
     <div>
-      <p>{process.env.NODE_ENV}</p>
       <pre className='title'>
         <a href={editUrl + folder + '/' + filename}>{filename}</a>
       </pre>
