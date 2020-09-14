@@ -1,9 +1,9 @@
 {
     "name": "docusaurus-file",
-    "version": "0.0.0-developement",
+    "version": "1.0.2",
     "repository": "https://github.com/matyifkbt/docusaurus-file",
     "description": "React component to include source files from your Github repo in your Docusaurus docs",
-    "main": "./lib/File.js",
+    "main": "./lib/index.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack"
@@ -11,7 +11,8 @@
     "peerDependencies": {
         "prop-types": "^15.6.0",
         "react": "^16.0.0",
-        "react-dom": "^16.0.0"
+        "react-dom": "^16.0.0",
+        "prism-react-renderer": "^1.1.1"
     },
     "devDependencies": {
         "babel-core": "^6.21.0",
@@ -25,7 +26,11 @@
         "webpack": "^4.5.0",
         "webpack-cli": "^3.3.12"
     },
-    "dependencies": {
-        "prism-react-renderer": "^1.1.1"
+    "bit": {
+        "env": {
+            "compiler": "bit.envs/compilers/react@1.0.20"
+        },
+        "componentsDefaultDirectory": "components/{name}",
+        "packageManager": "npm"
     }
 }
